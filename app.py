@@ -27,7 +27,7 @@ st.markdown("""
 </style>
 <div class="web"></div>
 <div class="spider">🕷️</div>
-""", unsafe_safe_allow_html=True)
+""", unsafe_allow_html=True)
 st.title("🎮 Guess the number!")
 st.write("I'm thinking of a number between 1 and 10.")
 if "secret" not in st.session_state:
