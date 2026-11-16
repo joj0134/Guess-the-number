@@ -47,7 +47,8 @@ if st.button("Guess!"):
       st.session_state.attempts += 1
       if guess == st.session_state.secret:
         st.session_state.message = "YOU GOT IT!"
-      elif abs(guess _ st.session_state.secret) == 1:
+        st.balloons()
+      elif abs(guess - st.session_state.secret) == 1:
         st.session_state.message = "ALMOST THERE!"
       elif guess > st.session_state.secret:
         st.session_state.message = "Try lower."
