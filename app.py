@@ -49,13 +49,13 @@ if st.button("Guess!"):
         st.session_state.message = "YOU GOT IT!"
         st.balloons()
       elif abs(guess _ st.session_state.secret) == 1:
-        st.session_state.message = "ALMOST THERE!"
+          st.session_state.message = "ALMOST THERE!"
       elif guess > st.session_state.secret:
-        st.session_state.message = "Try lower."
+          st.session_state.message = "Try lower."
       else:
-        st.session_state.message = "Try higher."
+          st.session_state.message = "Try higher."
       if guess != st.session_state.secret and st.session_state.attempts == 3:
-        st.session_state.message = f"👎GAME OVER! IT WAS {st.session_state.secret}"
+          st.session_state.message = f"👎GAME OVER! IT WAS {st.session_state.secret}"
       st.rerun()
 if st.button("Play again"):
     st.session_state.secret = random.randint(1, 10)
